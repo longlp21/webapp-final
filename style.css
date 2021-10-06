@@ -15,9 +15,7 @@ table{
     border: 2px;
     
 }
-.btn {
-    margin-left: 20px;
-}
+
 
 #show th, #show td{
 	padding: 10px;
@@ -31,7 +29,10 @@ table{
     
 }
 
-.form {
+/* .form {
     padding-left: 270px;
     padding-top: 20px;
-}
+} */
+
+
+

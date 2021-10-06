@@ -14,51 +14,70 @@
     <body class="mx-4 my-4">
         <script type="text/javascript" src="script.js"></script>
         
-        <h1>Petrol Employee Management</h1>
+        <h4>Petrol Employee Management</h4>
         <hr />
 
-                <div class="form">
+                <form >
                     <tr>
+                        <div class="col-md-2">
                         <th>Employee Name</th>
-                        <td><input type="text" name="name" id="name"></td>
+                        <td><input type="text" name="name" id="name" class="form-control"></td>
+                        </div>
+                     </tr>   
                     <tr>
-                        <th>DOB</th>
-                        <td><input type="date" name="DOB" id="DOB"></td>
+                        <div class="col-md-2">
+                        <th>Date of birth</th>
+                        <td><input type="date" name="DOB" id="DOB" class="form-control"></td>
+                        </div>
                     </tr>
                     <tr>
+                        <div class="col-md-2">
                         <th>Gender</th>
-                        <select class="form-check-inline" id="gender" name="gender">
+                        <select class="form-select" id="gender" name="gender" class="form-control">
                             <option value="" selected>--</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
+                        </div>
                         
                     </tr>
                     <tr>
+                        <div class="col-md-2">
                         <th>Phone Number</th>
-                        <td><input type="text" name="phone" id="phone"></td>
+                        <td><input type="number" name="phone" id="phone" class="form-control"></td>
+                        </div>
                     </tr>
                     <tr>
+                        <div class="col-md-2">
                         <th>Emails</th>
-                        <td><input type="text" name="emails" id="emails"></td>
+                        <td><input type="text" name="emails" id="emails" class="form-control"></td>
+                        </div>
                     </tr>
-                    <button type="button" class="btn btn-primary" id="btn" onclick="AddRow()">Submit</button>
-                </div>
+                
 
-        <hr />
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit" onclick="AddRow()">Submit</button>
+                    </div>
+                </form>
+
+        <hr /> 
                 
                     <table id="show" class="display-table">
                         <thead>
                             <tr>
                                 <th>Employee Name</th>
-                                <th>DOB</th>
+                                <th>Date of birth</th>
                                 <th>Gender</th>
                                 <th>Phone Number</th>
                                 <th>Emails</th>
+                                <th>Actions</th>
                                 
                             </tr>
                         </thead>
-                    </table>    
+                    </table>   
+
+
+               
                     
     </body>
 </html>
