@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
 label {
     width:180px;
     text-align:left;
@@ -7,9 +12,11 @@ label {
 table{
 	margin-top: 50px;
 	text-align: center;
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
+    border: 2px;
     
+}
+.btn {
+    margin-left: 20px;
 }
 
 #show th, #show td{
@@ -17,6 +24,14 @@ table{
     border: 1px solid black;
 }
 
-tr {
-    text-align: left;
+.display-table{
+    width: 750px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+.form {
+    padding-left: 270px;
+    padding-top: 20px;
 }
