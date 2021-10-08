@@ -38,3 +38,6 @@ var list1 = [];
 			x++;
 		}
 
+        function resetTable (){
+            
+        }
