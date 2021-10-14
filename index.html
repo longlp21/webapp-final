@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -23,94 +23,28 @@
   <body class="mx-4 my-4" id="main">
     <script type="text/javascript" src="script.js"></script>
 
-    <h4>Petrol Employee Management</h4>
-    <p>by group 11</p>
-    <hr />
+    <div class="m-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+              <a href="#" class="navbar-brand">
+                <h4>Petrol Employee Management</h4>
+                <p>by group 11</p>
+              </a>
+                  <div class="navbar-nav ms-auto">
+                    <button class="btn btn-outline-primary me-2" type="button"><i class="fa fa-user"></i> Register now</button>
+                    <button class="btn btn-outline-primary me-2" type="button"><i class="fa fa-user"></i> Applicant login</button>
+                    <button class="btn btn-outline-danger me-2" type="button"><i class="fa fa-gear"></i> Admin login</button>
+                  </div>
+          </div>
+          </div>
+      </nav>
+  </div>
+  <hr />
 
-    <form id="myform">
-      <div>
-        <tr>
-          <div class="col-md-4">
-            <th>Employee Name</th>
-            <td>
-              <input type="text" name="name" id="name" class="form-control" />
-            </td>
-          </div>
-        </tr>
-        <tr>
-          <div class="col-md-4">
-            <th>Date of birth</th>
-            <td>
-              <input type="date" name="DOB" id="DOB" class="form-control" />
-            </td>
-          </div>
-        </tr>
-        <tr>
-          <div class="col-md-4">
-            <th>Gender</th>
-            <select
-              class="form-select"
-              id="gender"
-              name="gender"
-              class="form-control"
-            >
-              <option value="" selected>--</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-          </div>
-        </tr>
-        <tr>
-          <div class="col-md-4">
-            <th>Phone Number</th>
-            <td>
-              <input
-                type="number"
-                name="phone"
-                id="phone"
-                class="form-control"
-              />
-            </td>
-          </div>
-        </tr>
-        <tr>
-          <div class="col-md-4">
-            <th>Emails</th>
-            <td>
-              <input
-                type="text"
-                name="emails"
-                id="emails"
-                class="form-control"
-              />
-            </td>
-          </div>
-        </tr>
-      </div>
-        
-        <button class="btn btn-danger col-md-4" type="reset" value="Reset">Reset</button>
-      
-    </form>
-    <button class="btn btn-primary col-md-4" type="submit" onclick="AddRow()">Submit</button> 
-    
-        <div>
-            <table id="show" class="table">
-              <thead>
-                <tr>
-                  <th>Employee Name</th>
-                  <th>Date of birth</th>
-                  <th >Gender</th>
-                  <th >Phone Number</th>
-                  <th >Emails</th>
-                  <th >Actions</th>
-                </tr>
-              </thead>
-            </table> 
-              
         </div>
-    
-      
-      
-    </div>
+      </div>
+    </nav>
+  
+  
   </body>
 </html>
