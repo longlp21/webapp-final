@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="mx-4 my-4" id="main-form">
+<body class="mx-4 my-4" id="main-form">
     <script type="text/javascript" src="script.js"></script>
 
     <div class="m-4">
@@ -28,12 +28,10 @@
           <div class="container-fluid">
               <a onclick="window.location.href='index.html'">
                 <h4 class="logo-txt-reg">Petrol Employee Management</h4>
-                <!-- <p>by group 11</p> -->
               </a>
                   <div class="navbar-nav ms-auto">
                     <button class="btn btn-primary me-3" type="button" onclick="window.location.href='register.html'"><i class="fa fa-user"></i> Register now</button>
-                    <button class="btn btn-primary me-3" type="button" onclick="window.location.href='app_login.html'"><i class="fa fa-user"></i> Applicant login</button>
-                    <button class="btn btn-danger me-3" type="button" onclick="window.location.href='adm_login.html'"><i class="fa fa-gear"></i> Admin login</button>
+                    <button class="btn btn-primary me-3" type="button" onclick="window.location.href='login.html'"><i class="fa fa-user"></i> Login</button>
                   </div>
           </div>
           </div>
@@ -44,42 +42,8 @@
         </div>
       </div>
     </nav>
-  <!-- <form > -->
-    
-    <!-- <div class="form-group col-md-2">
-      <label >First name</label>
-      <input type="text" class="form-control">
-    </div>
-    
-    <div class="form-group col-md-2">
-      <label >Last name</label>
-      <input type="text" class="form-control">
-    </div>
 
-    <div class="form-group col-md-2">
-      <label >Date of birth</label>
-      <input type="date" class="form-control">
-    </div>
-    
-    <div class="form-group col-md-2">
-      <label >Emails</label>
-      <input type="text" class="form-control">
-    </div> 
-
-    <div class="form-group col-md-2">
-      <label>Passwords</label>
-      <input type="password" class="form-control">
-    </div> 
-
-    <div class="form-row col-md-2">
-      <button class="btn btn-primary me-2" type="button">Submit</button>
-    </div> 
-      
-  </form>
-  </body>
-</html> -->
-
-    <section class="">
+    <section>
     <div class="mask d-flex align-items-center">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -88,49 +52,48 @@
               <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-                <form>
+                <table>
                   <div class="form-outline mb-2">
-                    <label class="form-label" for="form3Example1cg">Your Name</label>
-                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                    <label class="form-label">First Name</label>
+                    <input type="text" id="firstName" class="form-control form-control-lg" name="firstName" />
                   </div>
 
                   <div class="form-outline mb-2">
-                    <label class="form-label" for="form3Example3cg">Your Email</label>
-                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                    
+                    <label class="form-label">Last Name</label>
+                    <input type="text" id="lastName" class="form-control form-control-lg" name="lastName" />
                   </div>
+                  
+                  <div class="form-outline mb-2">
+                    <label class="form-label">Phone Number</label>
+                    <input type="number" id="phoneNumber" class="form-control form-control-lg" name="phoneNumber"/>
+                  </div>
+
 
                   <div class="form-outline mb-2">
-                    <label class="form-label" for="form3Example4cg">Password</label>
-                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                    
-                  </div>
-
-                  <div class="form-outline mb-2">
-                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                    
-                  </div>
-
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input
-                      class="form-check-input me-4"
-                      type="checkbox"
-                      value=""
-                      id="form2Example3cg"
-                    />
-                    <label class="form-check-label" for="form2Example3g">
-                  I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-                    </label>
+                    <label class="form-label">Your Email</label>
+                    <input type="text" id="emails" class="form-control form-control-lg" name="emails" />
                   </div>
 
                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary btn-block btn-lg">Register</button>
+                    <tr id="btna">
+                      <td><input type="button" class="btn btn-primary btn-block btn-lg" name="button" id="btn" value="Register" onclick="AddRow()" ></td>
+                  </tr>
                   </div>
-
-                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a onclick="window.location.href='app_login.html'" class="fw-bold text-body"><u>Login here</u></a></p>
-
-                </form>
+                </table>
+                <table id="show" class="table table-striped table-bordered" style="width:100%">
+                  <thead>
+                      <tr>
+                          <td>First Name</td>
+                          <td>Last Name</td>
+                          <td>Phone Number</td>
+                          <td>Emails</td>
+                      </tr>
+                  </thead>
+                       
+      
+                  </tbody>
+      
+              </table>      
 
               </div>
             </div>
@@ -138,8 +101,15 @@
         </div>
       </div>
     </div>
-    </section>
+              
+      
 
+
+    </section>
+    
   </form>
+ 
+          
+
 </body>
 </html>
