@@ -64,6 +64,15 @@
                   </div>
                   
                   <div class="form-outline mb-2">
+                    <label class="form-label">Gender</label>
+                    <select  class="form-control form-control-lg">
+                      <option selected>--</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                    </select>
+                  </div>
+
+                  <div class="form-outline mb-2">
                     <label class="form-label">Phone Number</label>
                     <input type="number" id="phoneNumber" class="form-control form-control-lg" name="phoneNumber"/>
                   </div>
@@ -75,25 +84,10 @@
                   </div>
 
                   <div class="d-flex justify-content-center">
-                    <tr id="btna">
-                      <td><input type="button" class="btn btn-primary btn-block btn-lg" name="button" id="btn" value="Register" onclick="AddRow()" ></td>
-                  </tr>
+                      <button type="button" class="btn btn-primary btn-block btn-lg" >Register</button>
                   </div>
+
                 </table>
-                <table id="show" class="table table-striped table-bordered" style="width:100%">
-                  <thead>
-                      <tr>
-                          <td>First Name</td>
-                          <td>Last Name</td>
-                          <td>Phone Number</td>
-                          <td>Emails</td>
-                      </tr>
-                  </thead>
-                       
-      
-                  </tbody>
-      
-              </table>      
 
               </div>
             </div>
